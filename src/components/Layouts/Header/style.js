@@ -31,6 +31,7 @@ export const Header = styled.header`
 `;
 
 export const Button = styled.button`
+  z-index: 3;
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}px) {
     display: none;
   }
