@@ -13,8 +13,8 @@ function ListProjects() {
   return (
     <>
       <List>
-        {Projects.map((project) => (
-          <Item>
+        {Projects.map((project, i) => (
+          <Item key={i}>
             <CardInfo {...project} />
           </Item>
         ))}
