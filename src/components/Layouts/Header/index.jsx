@@ -22,10 +22,6 @@ const links = [
     link: "/projetos",
     label: "Projects",
   },
-  {
-    link: "/blog",
-    label: "Blog",
-  },
 ];
 
 const HeaderComponent = () => {
