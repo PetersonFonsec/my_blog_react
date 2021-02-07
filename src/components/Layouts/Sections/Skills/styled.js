@@ -25,7 +25,7 @@ export const CarouselContainer = styled.div`
   }
 `;
 
-export const Titile = styled.h2`
+export const Title = styled.h2`
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;

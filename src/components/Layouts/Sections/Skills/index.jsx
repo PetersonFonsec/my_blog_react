@@ -1,12 +1,12 @@
 import SkillsCarousel from "../../../Carousels/Skills";
-import { Section, Titile, Wrapper, CarouselContainer } from "./styled";
+import { Section, Title, Wrapper, CarouselContainer } from "./styled";
 
 function SectionSkills() {
   return (
     <Section>
       <Wrapper>
         <CarouselContainer>
-          <Titile>Skills</Titile>
+          <Title>Skills</Title>
           <SkillsCarousel />
         </CarouselContainer>
       </Wrapper>
