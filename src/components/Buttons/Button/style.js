@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  background-color: ${({ primary }) => (primary ? "#5ED3F3" : "#61D7A4")};
+  background-color: ${({ primary, theme }) => {
+    if (theme.darkTheme) return theme.background.contrast;
+    return primary ? theme.background.contrast : theme.background.tertiary;
+  }};
   color: #ffffff;
   display: block;
   border-radius: 14px;
@@ -18,7 +21,7 @@ export const Button = styled.button`
   transition: 0.2s ease-in-out all;
   width: ${({ block }) => (block ? "100%" : "auto")};
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 22px;
     padding: 24px;
     line-height: 24px;

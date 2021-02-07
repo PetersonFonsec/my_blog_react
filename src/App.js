@@ -7,15 +7,20 @@ import GlobalStyle from "./styles/global";
 import Routes from "./Routes/index";
 import Header from "./components/Layouts/Header/index";
 import Footer from "./components/Layouts/Footer/index";
+import ButtonToggleTheme from "./components/Buttons/ToggleTheme/index";
 
 function App() {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
 
   return (
     <>
       <ThemeProvider theme={theme ? darkTheme : defaultTheme}>
         <GlobalStyle />
         <Header />
+        <ButtonToggleTheme
+          darkTheme={theme}
+          toggleTheme={() => setTheme(!theme)}
+        />
         <BrowserRouter>
           <Routes />
         </BrowserRouter>

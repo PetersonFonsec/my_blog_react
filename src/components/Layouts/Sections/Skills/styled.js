@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  background-color: #5ed3f3;
+  background-color: ${({ theme }) => theme.background.contrast};
   width: 100%;
 `;
 
 export const Wrapper = styled.div`
-  max-width: 100%;
-  padding: 62px 32px 18px;
   margin: 0 auto;
+  max-width: 100%;
+  padding: 24px 32px;
   width: 1288px;
 
-  @media (min-width: 1024px) {
-    padding: 88px 32px 55px;
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    padding: 62px 32px;
   }
 `;
 
@@ -20,7 +20,7 @@ export const CarouselContainer = styled.div`
   max-width: 100%;
   width: 704px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-left: auto;
   }
 `;
@@ -29,14 +29,14 @@ export const Title = styled.h2`
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
-  font-size: 44px;
-  line-height: 70px;
+  font-size: 24px;
+  line-height: 44px;
   text-align: center;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.secundary};
   position: relative;
   margin-bottom: 20px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 44px;
@@ -60,7 +60,7 @@ export const Title = styled.h2`
     border-radius: 14px;
     margin: auto;
 
-    @media (min-width: 1024px) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
       top: -5px;
 
       width: 62px;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Button } from "../../Button/style";
+import { Button } from "../../Buttons/Button/style";
 
 export const List = styled.ul`
   display: grid;

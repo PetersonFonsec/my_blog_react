@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-  background: #f9f9f9;
+  background: ${({ theme }) => theme.background.secundary};
 `;
 
 export const Wrapper = styled.div`
@@ -13,15 +13,15 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #828ca3;
-  border-top: #828ca3;
+  color: ${({ theme }) => theme.colors.tertiary};
+  border-top: ${({ theme }) => theme.colors.tertiary};
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding: 60px;
   }
 
   hr {
-    border-top: 1px solid #828ca3;
+    border-top: 1px solid ${({ theme }) => theme.colors.tertiary};
     width: 100%;
     margin: 24px 0;
   }

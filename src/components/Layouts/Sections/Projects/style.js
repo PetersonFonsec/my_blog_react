@@ -6,11 +6,11 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   max-width: 100%;
-  padding: 40px 32px 18px;
+  padding: 40px 32px 120px;
   margin: 0 auto;
   width: 1288px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     padding: 88px 32px 55px;
   }
 `;
@@ -22,17 +22,14 @@ export const Title = styled.h3`
   font-size: 24px;
   line-height: 44px;
   text-align: center;
-  color: #5ed3f3;
+  color: ${({ theme }) => theme.colors.secundary};
   position: relative;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 44px;
-  }
-
-  @media (min-width: 768px) {
     text-align: center;
   }
 
@@ -53,7 +50,7 @@ export const Title = styled.h3`
     border-radius: 14px;
     margin: auto;
 
-    @media (min-width: 1024px) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
       top: -5px;
       width: 62px;
     }

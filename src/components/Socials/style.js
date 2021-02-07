@@ -18,8 +18,10 @@ export const Item = styled.li`
   }
 
   img {
+    ${({ invert, theme }) => invert && theme.darkTheme && "filter: invert(1);"}
     object-fit: contain;
-    @media (min-width: 1240px) {
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktopLarge}) {
       height: 34px;
       width: 34px;
     }

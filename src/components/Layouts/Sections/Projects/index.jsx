@@ -1,4 +1,3 @@
-import FormSearch from "../../../Forms/Search";
 import ListProjects from "../../../Lists/Projects";
 
 import { Section, Wrapper, Title } from "./style";

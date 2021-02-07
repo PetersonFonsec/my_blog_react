@@ -5,11 +5,14 @@ export const black = "#35363A";
 export const dark = "#4D4D4D";
 export const white = "#fff";
 export const light = "#F9F9F9";
+export const lighter = "#F5F5F5";
+export const gray = "#828CA3";
 export const yellow = "#FFF288";
 export const grid = 1200;
 
 export const breakpoints = {
-  mobile: 375,
-  tablet: 768,
-  desktop: 1240,
+  mobile: "375px",
+  tablet: "768px",
+  desktop: "1024px",
+  desktopLarge: "1240px",
 };

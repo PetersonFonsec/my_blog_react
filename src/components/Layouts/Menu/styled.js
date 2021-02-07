@@ -4,7 +4,7 @@ export const Menu = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.background.primary};
   position: fixed;
   left: 0;
   top: 0;
@@ -36,7 +36,8 @@ export const Item = styled.li`
     font-size: 32px;
     line-height: 36px;
     text-align: center;
-    color: ${({ active }) => (active ? "#5ed3f3" : "#000")};
+    color: ${({ active, theme }) =>
+      active ? "#5ed3f3" : theme.colors.primary};
     display: block;
     cursor: pointer;
 

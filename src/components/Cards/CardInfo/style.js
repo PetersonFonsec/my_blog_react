@@ -23,11 +23,11 @@ export const Content = styled.div`
   color: #fff;
   padding: 12px 6px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding: 24px 28px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     padding: 32px 22px;
   }
 `;
@@ -41,7 +41,7 @@ export const Title = styled.h3`
   color: #ffffff;
   margin-bottom: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 24px;
     line-height: 29px;
   }
@@ -55,7 +55,7 @@ export const Description = styled.p`
   line-height: 17px;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -79,13 +79,13 @@ export const Date = styled.time`
   line-height: 17px;
   color: #ffffff;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 8px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-bottom: 12px;
   }
 `;

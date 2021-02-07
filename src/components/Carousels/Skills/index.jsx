@@ -25,6 +25,7 @@ SwiperCore.use([Pagination]);
 const breakpoints = {
   375: {
     slidesPerView: 3,
+    slidesPerColumn: 2,
     spaceBetween: 24,
   },
   768: {
@@ -35,63 +36,66 @@ const breakpoints = {
   },
 };
 
+const skills = [
+  {
+    src: reactIcon,
+    alt: "React logo",
+  },
+  {
+    src: angularIcon,
+    alt: "Angular logo",
+  },
+  {
+    src: vueIcon,
+    alt: "vueIcon",
+  },
+  {
+    src: typescriptIcon,
+    alt: "Typescript logo",
+  },
+  {
+    src: gitIcon,
+    alt: "Git logo",
+  },
+  {
+    src: webpackIcon,
+    alt: "Webpack logo",
+  },
+  {
+    src: sassIcon,
+    alt: "Sass logo",
+  },
+  {
+    src: jsIcon,
+    alt: "Js logo",
+  },
+  {
+    src: dockerIcon,
+    alt: "Docker logo",
+  },
+  {
+    src: gulpIcon,
+    alt: "Gulp logo",
+  },
+  {
+    src: htmlIcon,
+    alt: "Html logo",
+  },
+  {
+    src: cssIcon,
+    alt: "Css logo",
+  },
+];
+
 export default function SkillsCarousel() {
   return (
     <CarouselWrapper>
-      <Swiper
-        pagination={{ clickable: true }}
-        slidesPerView={2}
-        slidesPerColumn={2}
-        spaceBetween={12}
-        breakpoints={breakpoints}
-      >
-        <SwiperSlide>
-          <CardLite src={reactIcon} alt="React logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={angularIcon} alt="Angular logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={vueIcon} alt="Vue logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={typescriptIcon} alt="Typescript logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={gitIcon} alt="Git logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={webpackIcon} alt="Webpack logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={sassIcon} alt="Sass logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={jsIcon} alt="Js logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={dockerIcon} alt="Docker logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={gulpIcon} alt="Gulp logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={htmlIcon} alt="Html logo" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardLite src={cssIcon} alt="Css logo" />
-        </SwiperSlide>
+      <Swiper pagination={{ clickable: true }} breakpoints={breakpoints}>
+        {skills.map((skill, i) => (
+          <SwiperSlide key={i}>
+            <CardLite {...skill} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </CarouselWrapper>
   );

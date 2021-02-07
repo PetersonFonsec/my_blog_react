@@ -5,44 +5,47 @@ import {
   dark,
   white,
   light,
+  lighter,
+  gray,
   breakpoints,
 } from "./variaves";
 
 export const defaultTheme = {
+  darkTheme: false,
+
   background: {
     primary: white,
     secundary: light,
+    tertiary: green,
     contrast: blue,
   },
 
-  text: {
-    size: {
-      normal: 18,
-    },
-    colors: {
-      primary: black,
-      secundary: white,
-      contrast: blue,
-    },
+  colors: {
+    primary: black,
+    secundary: white,
+    tertiary: gray,
+    contrast: blue,
   },
 
-  breakpoints: { ...breakpoints },
+  breakpoints,
 };
 
 export const darkTheme = {
+  darkTheme: true,
+
   background: {
     primary: black,
     secundary: dark,
+    tertiary: blue,
     contrast: green,
   },
 
-  text: {
-    colors: {
-      primary: white,
-      secundary: white,
-      contrast: green,
-    },
+  colors: {
+    primary: white,
+    secundary: white,
+    tertiary: lighter,
+    contrast: green,
   },
 
-  breakpoints: { ...breakpoints },
+  breakpoints,
 };

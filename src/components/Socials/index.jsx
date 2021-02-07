@@ -4,10 +4,10 @@ import IconeInstagram from "../../assets/icons/instagram.svg";
 import Icone from "../../assets/icons/whatsapp.svg";
 import { List, Item } from "./style";
 
-function Socials(params) {
+function Socials() {
   return (
     <List>
-      <Item>
+      <Item invert>
         <a href="https://google.com.br" target="_blank" rel="noreferrer">
           <img src={IconeGithub} alt="Link para o meu GitHub" />
         </a>
