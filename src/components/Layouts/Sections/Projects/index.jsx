@@ -9,7 +9,6 @@ function SectionProjects() {
       <Section>
         <Wrapper>
           <Title>My Projects</Title>
-          <FormSearch />
           <ListProjects />
         </Wrapper>
       </Section>
