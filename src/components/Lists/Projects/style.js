@@ -31,13 +31,13 @@ export const Item = styled.li`
   }
 
   &:nth-child(3) {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       grid-column: span 2;
     }
   }
 
   &:first-child {
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       grid-column: span 2;
       grid-row: span 2;
     }
