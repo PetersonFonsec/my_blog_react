@@ -38,7 +38,8 @@ export const Title = styled.h2`
   font-size: 24px;
   line-height: 44px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.secundary};
+  color: ${({ theme }) =>
+    theme.darkTheme ? theme.colors.secundary : theme.colors.secundary};
   position: relative;
   margin-bottom: 20px;
 

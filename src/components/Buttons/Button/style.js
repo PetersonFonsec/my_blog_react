@@ -5,7 +5,7 @@ export const Button = styled.button`
     if (theme.darkTheme) return theme.background.contrast;
     return primary ? theme.background.contrast : theme.background.tertiary;
   }};
-  color: #ffffff;
+  color: ${({ theme }) => theme.background.primary};
   display: block;
   border-radius: 14px;
   box-shadow: ${({ primary }) =>

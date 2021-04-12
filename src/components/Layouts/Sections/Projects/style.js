@@ -22,7 +22,8 @@ export const Title = styled.h3`
   font-size: 24px;
   line-height: 44px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.secundary};
+  color: ${({ theme }) =>
+    theme.darkTheme ? theme.colors.primary : theme.colors.contrast};
   position: relative;
   margin-bottom: 20px;
 

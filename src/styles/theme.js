@@ -42,7 +42,7 @@ export const darkTheme = {
 
   colors: {
     primary: white,
-    secundary: white,
+    secundary: dark,
     tertiary: lighter,
     contrast: green,
   },
