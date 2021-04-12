@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const CarouselWrapper = styled.ul`
+export const CarouselWrapper = styled.div`
   overflow: hidden;
-  width: 100%;
+  width: 100s;
   max-width: 450px;
   margin: 0 auto;
 

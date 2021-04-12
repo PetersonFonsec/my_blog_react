@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.background.contrast};
-  width: 100%;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`

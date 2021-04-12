@@ -21,6 +21,11 @@ export const Section = styled.section`
   }
 `;
 
+export const SectionWrapper = styled.div`
+  max-width: 100%;
+  width: max-content;
+`;
+
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   display: block;
@@ -28,8 +33,6 @@ export const Title = styled.h1`
   font-weight: 500;
   line-height: 29px;
   margin-bottom: 40px;
-  max-width: 100%;
-  width: max-content;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 40px;

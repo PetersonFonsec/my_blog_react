@@ -7,6 +7,8 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: sticky;
+  top: 180px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin: 0 auto;
@@ -17,11 +19,8 @@ export const Card = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.desktopLarge}) {
     border-radius: 14px;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
-    left: 44px;
-    position: absolute;
     padding: 32px;
     min-width: 385px;
-    top: 100px;
   }
 `;
 

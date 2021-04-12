@@ -1,16 +1,16 @@
-import CardProfile from "../../../Cards/CardProfile/index";
-import { Section, Title } from "./style";
+import { Section, Title, SectionWrapper } from "./style";
 
-function SectionProfile(params) {
+function SectionProfile() {
   return (
     <Section>
-      <Title>
-        Olá,
-        <br />
-        meu nome é <strong>Peterson F. Simião</strong>
-        Desenvolvedor Front-end
-      </Title>
-      <CardProfile />
+      <SectionWrapper>
+        <Title>
+          Olá,
+          <br />
+          meu nome é <strong>Peterson F. Simião</strong>
+          Desenvolvedor Front-end
+        </Title>
+      </SectionWrapper>
     </Section>
   );
 }

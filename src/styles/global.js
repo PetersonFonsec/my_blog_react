@@ -56,5 +56,10 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.background.primary};
     padding: 0;
     margin: 0;
+    overflow: visible;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 `;
