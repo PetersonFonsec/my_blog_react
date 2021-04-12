@@ -58,8 +58,4 @@ export default createGlobalStyle`
     margin: 0;
     overflow: visible;
   }
-
-  body {
-    overflow-x: hidden;
-  }
 `;

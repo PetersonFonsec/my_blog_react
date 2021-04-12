@@ -8,7 +8,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   position: sticky;
-  top: 180px;
+  top: 100px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin: 0 auto;
@@ -32,10 +32,10 @@ export const Avatar = styled.img`
   object-fit: cover;
   width: 140px;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    height: 320px;
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    height: 220px;
     margin-bottom: 20px;
-    width: 320px;
+    width: 220px;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktopLarge}) {

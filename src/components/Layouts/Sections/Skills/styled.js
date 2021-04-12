@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.background.contrast};
-  width: 100vw;
+  order: 2;
+  width: 100%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    order: unset;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -19,9 +24,10 @@ export const Wrapper = styled.div`
 export const CarouselContainer = styled.div`
   max-width: 100%;
   width: 704px;
+  margin: 0 auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    margin-left: auto;
+    margin: 0 0 0 auto;
   }
 `;
 

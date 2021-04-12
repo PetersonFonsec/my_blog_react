@@ -5,7 +5,6 @@ export const Card = styled.article`
   width: 100%;
   height: 100%;
   border-radius: 14px;
-  overflow: hidden;
 `;
 
 export const Content = styled.div`
