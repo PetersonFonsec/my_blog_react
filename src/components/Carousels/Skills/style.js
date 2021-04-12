@@ -11,8 +11,6 @@ export const CarouselWrapper = styled.div`
   }
 
   .swiper-wrapper {
-    height: 206px;
-
     @media (min-width: 768px) {
       height: 360px;
     }
