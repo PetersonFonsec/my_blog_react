@@ -31,6 +31,8 @@ export const Avatar = styled.img`
   margin-bottom: 28px;
   object-fit: cover;
   width: 140px;
+  object-fit: cover;
+  object-position: center top;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     height: 220px;

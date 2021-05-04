@@ -19,11 +19,15 @@ export const Aside = styled.aside`
     align-items: stretch;
     display: flex;
     height: 100%;
-    left: 84px;
     position: absolute;
     padding-left: 0;
     z-index: 1;
     order: unset;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1138px;
+    left: 0;
+    right: 0;
   }
 `;
 

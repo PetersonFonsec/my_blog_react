@@ -1,13 +1,12 @@
 import Socials from "../../Socials";
+
+import photoProfile from "../../../assets/perfil.jpg";
 import { Avatar, Card, Description, DownloadButton } from "./style";
 
 function CardProfile(params) {
   return (
     <Card>
-      <Avatar
-        src="https://dummyimage.com/600x400/000/fff"
-        alt="Foto de perfil"
-      />
+      <Avatar src={photoProfile} alt="Peterson F. Simião" />
 
       <Description>
         Peterson F. Simião
