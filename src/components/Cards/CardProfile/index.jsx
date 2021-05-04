@@ -1,6 +1,7 @@
 import Socials from "../../Socials";
 
 import photoProfile from "../../../assets/perfil.jpg";
+import CV from "../../../assets/Curriculo-Peterson.pdf";
 import { Avatar, Card, Description, DownloadButton } from "./style";
 
 function CardProfile(params) {
@@ -13,7 +14,7 @@ function CardProfile(params) {
         <br /> Front-end developer
       </Description>
 
-      <DownloadButton primary block>
+      <DownloadButton as="a" href={CV} download primary block>
         Baixar CV
       </DownloadButton>
 
