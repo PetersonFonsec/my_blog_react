@@ -17,7 +17,11 @@ function Socials() {
         </a>
       </Item>
       <Item>
-        <a href="https://google.com.br" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/peterson-fonseca-759203174/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={IconeLinkedin} alt="Link para o meu linkedin" />
         </a>
       </Item>
