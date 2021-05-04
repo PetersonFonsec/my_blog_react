@@ -8,7 +8,11 @@ function Socials() {
   return (
     <List>
       <Item invert>
-        <a href="https://google.com.br" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/PetersonFonsec"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={IconeGithub} alt="Link para o meu GitHub" />
         </a>
       </Item>
@@ -18,12 +22,20 @@ function Socials() {
         </a>
       </Item>
       <Item>
-        <a href="https://google.com.br" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.instagram.com/petersonf_simiao/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={IconeInstagram} alt="Link para o meu Instagran" />
         </a>
       </Item>
       <Item>
-        <a href="https://google.com.br" target="_blank" rel="noreferrer">
+        <a
+          href="https://api.whatsapp.com/send?phone=5511977288479"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={Icone} alt="Link para o meu Whatsapp" />
         </a>
       </Item>
