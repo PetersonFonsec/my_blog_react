@@ -1,50 +1,52 @@
 import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
-  width: 100s;
-  max-width: 450px;
+  width: 100%;
+  max-width: 380px;
   margin: 0 auto;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-left: unset;
   }
 
-  .swiper-wrapper {
-    @media (min-width: 768px) {
-      height: 360px;
-    }
+  .swiper-container {
+    height: 280px;
+    width: 100%;
 
-    @media (min-width: 1024px) {
-      height: 340px;
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      height: 360px;
+      margin-left: -6px;
     }
   }
 
   .swiper-slide {
-    height: max-content;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    height: calc((100% - 44px) / 2);
+    text-align: center;
 
-    @media (max-width: 1024px) {
-      display: flex;
-      justify-content: center;
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      height: calc((100% - 44px) / 3);
     }
   }
 
-  .swiper-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   .swiper-pagination {
-    margin-top: 20px;
-    position: unset;
-  }
+    bottom: 0;
 
-  .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
-    background: #fff070;
-    box-shadow: 0px 4px 4px rgba(255, 240, 112, 0.25);
-    opacity: 1;
-    transition: 0.2s ease-in-out all;
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      display: none;
+    }
+
+    &-bullet {
+      width: 14px;
+      height: 14px;
+      background: #fff070;
+      box-shadow: 0px 4px 4px rgba(255, 240, 112, 0.25);
+      opacity: 1;
+      transition: 0.2s ease-in-out all;
+    }
   }
 
   .swiper-pagination-bullet-active {

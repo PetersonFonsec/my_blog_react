@@ -22,20 +22,6 @@ import htmlIcon from "../../../assets/icons/html.svg";
 
 SwiperCore.use([Pagination]);
 
-const breakpoints = {
-  375: {
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 24,
-  },
-  768: {
-    slidesPerView: 4,
-    slidesPerColumn: 3,
-    pagination: false,
-    spaceBetween: 44,
-  },
-};
-
 const skills = [
   {
     src: reactIcon,
@@ -87,10 +73,29 @@ const skills = [
   },
 ];
 
+const breakpoints = {
+  360: {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+  },
+  1024: {
+    slidesPerView: 4,
+    slidesPerColumn: 3,
+    pagination: false,
+  },
+};
+
 export default function SkillsCarousel() {
   return (
     <CarouselWrapper>
-      <Swiper pagination={{ clickable: true }} breakpoints={breakpoints}>
+      <Swiper
+        slidesPerView={2}
+        slidesPerColumn={2}
+        breakpoints={breakpoints}
+        pagination={{
+          clickable: true,
+        }}
+      >
         {skills.map((skill, i) => (
           <SwiperSlide key={i}>
             <CardLite {...skill} />

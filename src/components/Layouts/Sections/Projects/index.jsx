@@ -4,14 +4,12 @@ import { Section, Wrapper, Title } from "./style";
 
 function SectionProjects() {
   return (
-    <>
-      <Section>
-        <Wrapper>
-          <Title>My Projects</Title>
-          <ListProjects />
-        </Wrapper>
-      </Section>
-    </>
+    <Section>
+      <Wrapper>
+        <Title>My Projects</Title>
+        <ListProjects />
+      </Wrapper>
+    </Section>
   );
 }
 

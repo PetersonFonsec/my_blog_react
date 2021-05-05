@@ -15,4 +15,8 @@ export const Card = styled.div`
     height: 80px;
     width: 80px;
   }
+
+  img {
+    object-fit: contain;
+  }
 `;
