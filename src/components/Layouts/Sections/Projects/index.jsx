@@ -6,7 +6,7 @@ function SectionProjects() {
   return (
     <Section>
       <Wrapper>
-        <Title>My Projects</Title>
+        <Title>Meus Projetos</Title>
         <ListProjects />
       </Wrapper>
     </Section>

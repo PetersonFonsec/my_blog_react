@@ -25,7 +25,7 @@ export const Aside = styled.aside`
     order: unset;
     width: 100%;
     margin: 0 auto;
-    max-width: 1138px;
+    max-width: 1220px;
     left: 0;
     right: 0;
   }
@@ -37,7 +37,7 @@ export const AsideContainer = styled.div`
   margin: 0 auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    padding-bottom: 94px;
+    padding-bottom: 118px;
     margin: 0;
     height: inherit;
   }

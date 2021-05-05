@@ -12,15 +12,15 @@ import CloseIcon from "../../../assets/icons/close.svg";
 const links = [
   {
     link: "/",
-    label: "Skills",
+    label: "Habilidades",
   },
   {
     link: "/experiencia",
-    label: "Experience",
+    label: "Experiência",
   },
   {
     link: "/projetos",
-    label: "Projects",
+    label: "Projetos",
   },
 ];
 

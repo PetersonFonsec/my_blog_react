@@ -1,5 +1,5 @@
 import CardInfo from "../../Cards/CardInfo/index";
-import { List, Item, ButtonShowMore } from "./style";
+import { List, Item } from "./style";
 
 const Projects = Array(5).fill({
   title: "Sítio Sassafraz",
@@ -11,18 +11,13 @@ const Projects = Array(5).fill({
 
 function ListProjects() {
   return (
-    <>
-      <List>
-        {Projects.map((project, i) => (
-          <Item key={i}>
-            <CardInfo {...project} />
-          </Item>
-        ))}
-      </List>
-      <ButtonShowMore block uppercase>
-        Ver Todos
-      </ButtonShowMore>
-    </>
+    <List>
+      {Projects.map((project, i) => (
+        <Item key={i}>
+          <CardInfo {...project} />
+        </Item>
+      ))}
+    </List>
   );
 }
 

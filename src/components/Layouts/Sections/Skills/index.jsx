@@ -6,7 +6,7 @@ function SectionSkills() {
     <Section>
       <Wrapper>
         <CarouselContainer>
-          <Title>Skills</Title>
+          <Title>Habilidades</Title>
           <SkillsCarousel />
         </CarouselContainer>
       </Wrapper>
