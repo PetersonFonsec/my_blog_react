@@ -15,14 +15,14 @@ export const defaultTheme = {
 
   background: {
     primary: white,
-    secundary: light,
+    secondary: light,
     tertiary: green,
     contrast: blue,
   },
 
   colors: {
     primary: black,
-    secundary: white,
+    secondary: white,
     tertiary: gray,
     contrast: blue,
   },
@@ -35,14 +35,14 @@ export const darkTheme = {
 
   background: {
     primary: black,
-    secundary: dark,
+    secondary: dark,
     tertiary: blue,
     contrast: green,
   },
 
   colors: {
     primary: white,
-    secundary: dark,
+    secondary: dark,
     tertiary: lighter,
     contrast: green,
   },

@@ -4,7 +4,7 @@ import { Section, Wrapper, Title } from "./style";
 
 function SectionProjects() {
   return (
-    <Section>
+    <Section id="projects">
       <Wrapper>
         <Title>Meus Projetos</Title>
         <ListProjects />

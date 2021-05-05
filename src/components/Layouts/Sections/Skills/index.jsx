@@ -3,7 +3,7 @@ import { Section, Title, Wrapper, CarouselContainer } from "./styled";
 
 function SectionSkills() {
   return (
-    <Section>
+    <Section id="skills">
       <Wrapper>
         <CarouselContainer>
           <Title>Habilidades</Title>

@@ -60,6 +60,7 @@ export const Nav = styled.nav`
 
   li {
     color: ${({ theme }) => theme.colors.primary};
+    cursor: pointer;
   }
 
   li:not(:last-child) {

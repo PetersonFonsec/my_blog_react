@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Menu from "../Menu/index";
 import { Header, Button, Nav } from "./style";
@@ -11,21 +11,30 @@ import CloseIcon from "../../../assets/icons/close.svg";
 
 const links = [
   {
-    link: "/",
+    idSection: "skills",
     label: "Habilidades",
   },
+  // {
+  //   idSection: "/experiencia",
+  //   label: "Experiência",
+  // },
   {
-    link: "/experiencia",
-    label: "Experiência",
-  },
-  {
-    link: "/projetos",
+    idSection: "projects",
     label: "Projetos",
   },
 ];
 
+const scrollToSection = (id) =>
+  document
+    .getElementById(id)
+    .scrollIntoView({ block: "start", behavior: "smooth" });
+
 const HeaderComponent = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const scroll = (id) => {
+    setShowMenu(false);
+    scrollToSection(id);
+  };
 
   return (
     <>
@@ -38,9 +47,9 @@ const HeaderComponent = () => {
 
           <Nav>
             <ul>
-              {links.map(({ link, label }, i) => (
-                <li key={i}>
-                  <Link to={link}>{label}</Link>
+              {links.map(({ idSection, label }, i) => (
+                <li key={i} onClick={() => scroll(idSection)}>
+                  {label}
                 </li>
               ))}
             </ul>
@@ -54,7 +63,12 @@ const HeaderComponent = () => {
           </Button>
         </Router>
       </Header>
-      <Menu links={links} active={links[0].link} show={showMenu} />
+      <Menu
+        links={links}
+        active={links[0].idSection}
+        callback={scroll}
+        show={showMenu}
+      />
     </>
   );
 };
