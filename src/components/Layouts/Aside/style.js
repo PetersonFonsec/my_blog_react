@@ -37,7 +37,7 @@ export const AsideContainer = styled.div`
   margin: 0 auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    padding-bottom: 118px;
+    padding-bottom: 90px;
     margin: 0;
     height: inherit;
   }

@@ -47,6 +47,10 @@ export const Item = styled.li`
     @media (min-width: 1024px) {
       grid-column: span 2;
       grid-row: span 4;
+
+      img {
+        object-position: top right;
+      }
     }
   }
 `;

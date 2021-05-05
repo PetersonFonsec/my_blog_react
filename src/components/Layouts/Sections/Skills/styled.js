@@ -17,14 +17,14 @@ export const Wrapper = styled.div`
   width: 1288px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    padding: 62px 32px;
+    padding: 102px 32px 32px;
   }
 `;
 
 export const CarouselContainer = styled.div`
+  margin: 0 auto;
   max-width: 100%;
   width: 704px;
-  margin: 0 auto;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin: 0 0 0 auto;

@@ -54,6 +54,11 @@ export const Description = styled.p`
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 18px;

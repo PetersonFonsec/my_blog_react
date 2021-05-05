@@ -6,7 +6,7 @@ function footer(params) {
     <Footer>
       <Wrapper>
         <Socials />
-        <hr />© 2020 Peterson F. Simião. Todos os direitos reservados.
+        <hr />© 2021 Peterson F. Simião. Todos os direitos reservados.
       </Wrapper>
     </Footer>
   );
