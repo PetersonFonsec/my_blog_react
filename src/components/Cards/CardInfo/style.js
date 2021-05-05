@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Card = styled.article`
+  border-radius: 14px;
+  height: 100%;
+  overflow: hidden;
   position: relative;
   width: 100%;
-  height: 100%;
-  border-radius: 14px;
 `;
 
 export const Content = styled.div`
